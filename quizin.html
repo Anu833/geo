@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOTROTTER QUIZ</title>
+    
+
+    <style >
+        
+        
+        .container {
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 60%;
+            padding: 20px;
+            display: none;
+            align: center;
+            background-color : #062925;
+            font-color : #ffff;
+            margin-top : 175px;
+            margin-right : 100px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+
+<body style="background-color:#ffff">
+    <div class="container" style="background-color:#B8E1DD">
+        Q1. National currency of INDIA is ___?<hr>
+        <input type="radio" name="question1" id="correct1">RUPEES<br>
+        <input type="radio" name="question1">DOLLARS<br>
+        <input type="radio" name="question1">EURO<br>
+        <input type="radio" name="question1">POUND<br>
+        <button class="next" onclick="next(1)">NEXT</button>
+        
+    </div>
+
+    <div class="container" style="background-color:#B8E1DD">
+        Q2. Which festival is the festival of colors?<hr>
+        <input type="radio" name="question2" >DIWALI<br>
+        <div class = "cor2"><input type="radio" name="question2" id="correct2">HOLI<br></div>
+        <input type="radio" name="question2">RAKSHA BANDHAN<br>
+        <input type="radio" name="question2">GANESH CHATURTHI<br>
+        <button class="next"  onclick="next(2)">NEXT</button>
+        
+    </div>
+
+    <div class="container" style="background-color:#B8E1DD">
+        Q3. Which festival is the celebration of returning  LORD RAMA to Ayodhya after 14 years ?<hr>
+        <input type="radio" name="question3" >RAMA NAVAMI<br>
+        <input type="radio" name="question3">NAVARATRI<br>
+        <input type="radio" name="question3">GANESH CHATURTHI<br>
+        <input type="radio" name="question3" id="correct3">DIWALI<br>
+        <button class="next" onclick="next(3)">NEXT</button>
+        
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q4. As per 2011 Census, which one of the following states has the highest Female literacy rate in India?<hr>
+        <input type="radio" name="question3" >GUJRAT<br>
+        <input type="radio" name="question3">TAMIL NADU<br>
+        <input type="radio" name="question3">KARNATAKA<br>
+        <input type="radio" name="question3" id="correct4">KERALA<br>
+        <button class="next" onclick="next(4)">NEXT</button>
+        
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q5. In which of the following states, blood rain occurs?<hr>
+        <input type="radio" name="question3" >KARNATAKA<br>
+        <input type="radio" name="question3">GUJRAT<br>
+        <input type="radio" name="question3">BIHAR<br>
+        <input type="radio" name="question3" id="correct5">KERALA<br>
+        <button class="next" onclick="next(5)">NEXT</button>
+        
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q6. Chukchi Sea is located in <hr>
+        <input type="radio" name="question3" >NORTH PACIFIC OCEAN<br>
+        <input type="radio" name="question3">SOUTH INDIAN OCEAN<br>
+        <input type="radio" name="question3">NORTH ATLANTIC OCEAN<br>
+        <input type="radio" name="question3" id="correct6">ARCTIC OCEAN<br>
+        <button class="next" onclick="next(6)">NEXT</button>
+        
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q7. Which one of the following states is the largest producer of silk textile?<hr>
+        <input type="radio" name="question3" >ASSAM<br>
+        <input type="radio" name="question3">GUJRAT<br>
+        <input type="radio" name="question3">BIHAR<br>
+        <input type="radio" name="question3" id="correct7">KARNATAKA<br>
+        <button class="next" onclick="next(7)">NEXT</button>
+        
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q8. Which is the tunnel made with hidden riches?<hr>
+        <input type="radio" name="question3" >RED FORT<br>
+        <input type="radio" name="question3">KAMAL MAHAL<br>
+        <input type="radio" name="question3">KUTUBMINAR<br>
+        <input type="radio" name="question3" id="correct8">CHARMINAR<br>
+        <button class="next" onclick="next(8)">NEXT</button>
+        
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q9. What is the capital of INDIA?<hr>
+        <input type="radio" name="question3" >GUJRAT<br>
+        <input type="radio" name="question3">MUMBAI<br>
+        <input type="radio" name="question3">KOLKATTA<br>
+        <input type="radio" name="question3" id="correct9">DELHI<br>
+        <button class="next" onclick="next(9)">NEXT</button>
+        
+    </div>
+    
+    
+
+    
+    <div class="container" style="background-color:#B8E1DD">
+        Q10. Which is the palace in which floors are made of egg white and jaggery?<hr>
+        <input type="radio" name="question3" >VIJAYA PALACE<br>
+        <input type="radio" name="question3">TAJ MAHAL<br>
+        <input type="radio" name="question3">MIRJAN PALACE<br>
+        <input type="radio" name="question3" id="correct10">MATTANCHERRY PALACE<br>
+        
+        <button onclick="result()">SUBMIT QUIZ</button>
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+
+    <script>
+        // displaying the first block of question
+        document.getElementsByClassName('container')[0].style.display = "block";
+
+        // DEFINING THE NEXT FUNCTION
+        function next(id=10) {
+            document.getElementsByClassName('container')[id-1].style.display = "none";
+            document.getElementsByClassName('container')[id].style.display = "block";
+        }
+        //getting final result
+        function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            }
+            if (document.getElementById('correct6').checked) {
+                score++;
+            }
+            if (document.getElementById('correct7').checked) {
+                score++;
+            }
+            if (document.getElementById('correct8').checked) {
+                score++;
+            }
+            if (document.getElementById('correct9').checked) {
+                score++;
+            }
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+            
+
+
+            alert("your score is: "+ score +"  out of 10  ");
+        }
+    </script>
+</body>
+</html>

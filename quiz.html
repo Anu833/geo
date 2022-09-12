@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>GEOTROTTER QUIZ</title>
+
+
+    <style>
+        .container {
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 60%;
+            padding: 20px;
+            display: none;
+            /* align: center; */
+            background-color: #062925;
+            /* font-color : #ffff; */
+            margin-top: 175px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#ffff">
+    <div class="container" style="background-color:#B8E1DD">
+        Q1. Which is the smallest country in the world?
+        <hr>
+        <input type="radio" name="question1" id="correct1">VATICAN CITY<br>
+        <input type="radio" name="question1">RUSSIA<br>
+        <input type="radio" name="question1">SRILANKA<br>
+        <input type="radio" name="question1">FINLAND<br>
+        <button class="next" onclick="next(1)">NEXT</button>
+    </div>
+
+    <div class="container" style="background-color:#B8E1DD">
+        Q2. What is the only country that borders the United Kingdom?
+        <hr>
+        <input type="radio" name="question2">DENMARK<br>
+        <input type="radio" name="question2" id="correct2">IRELAND<br>
+        <input type="radio" name="question2">GERMANY<br>
+        <input type="radio" name="question2">INDIA<br>
+        <button class="next" onclick="next(2)">NEXT</button>
+    </div>
+
+    <div class="container" style="background-color:#B8E1DD">
+        Q3. How many time zones does Australia have?
+        <hr>
+        <input type="radio" name="question3">ONE<br>
+        <input type="radio" name="question3">FOUR<br>
+        <input type="radio" name="question3">TWO<br>
+        <input type="radio" name="question3" id="correct3">THREE<br>
+        <button class="next" onclick="next(3)">NEXT</button>
+
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q4. As per 2011 Census, which one of the following states has the highest Female literacy rate in India?
+        <hr>
+        <input type="radio" name="question3">GUJRAT<br>
+        <input type="radio" name="question3">TAMIL NADU<br>
+        <input type="radio" name="question3">KARNATAKA<br>
+        <input type="radio" name="question3" id="correct4">KERALA<br>
+        <button class="next" onclick="next(4)">NEXT</button>
+
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q5. In which of the following states, blood rain occurs?
+        <hr>
+        <input type="radio" name="question3">KARNATAKA<br>
+        <input type="radio" name="question3">GUJRAT<br>
+        <input type="radio" name="question3">BIHAR<br>
+        <input type="radio" name="question3" id="correct5">KERALA<br>
+        <button class="next" onclick="next(5)">NEXT</button>
+
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q6. Chukchi Sea is located in _______
+        <hr>
+        <input type="radio" name="question3">NORTH PACIFIC OCEAN<br>
+        <input type="radio" name="question3">SOUTH INDIAN OCEAN<br>
+        <input type="radio" name="question3">NORTH ATLANTIC OCEAN<br>
+        <input type="radio" name="question3" id="correct6">ARCTIC OCEAN<br>
+        <button class="next" onclick="next(6)">NEXT</button>
+
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q7. Which one of the following states is the largest producer of silk textile?
+        <hr>
+        <input type="radio" name="question3">ASSAM<br>
+        <input type="radio" name="question3">GUJRAT<br>
+        <input type="radio" name="question3">BIHAR<br>
+        <input type="radio" name="question3" id="correct7">KARNATAKA<br>
+        <button class="next" onclick="next(7)">NEXT</button>
+
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q8. WHAT IS THE CAPITAL OF POLAND?
+        <hr>
+        <input type="radio" name="question3">DUBLIN<br>
+        <input type="radio" name="question3">PARIS<br>
+        <input type="radio" name="question3">BERLIN<br>
+        <input type="radio" name="question3" id="correct8">WARSAW<br>
+        <button class="next" onclick="next(8)">NEXT</button>
+
+    </div>
+    <div class="container" style="background-color:#B8E1DD">
+        Q9. which country is famous for maple syrup?
+        <hr>
+        <input type="radio" name="question3">USA<br>
+        <input type="radio" name="question3">SWEDEN<br>
+        <input type="radio" name="question3">JAPAN<br>
+        <input type="radio" name="question3" id="correct9">CANADA<br>
+        <button class="next" onclick="next(9)">NEXT</button>
+
+    </div>
+
+    <div class="container" style="background-color:#B8E1DD">
+        Q10 Which country has the most natural lakes?
+        <hr>
+        <input type="radio" name="question3">ANTARTICA<br>
+        <input type="radio" name="question3">ASIA<br>
+        <input type="radio" name="question3">EUROPE<br>
+        <input type="radio" name="question3" id="correct10">CANADA<br>
+
+        <button onclick="result()">Submit Quiz</button>
+        <button onclick="location.href='index.html'">Home</button>
+
+    </div>
+
+    <script>
+        // displaying the first block of question
+        document.getElementsByClassName('container')[0].style.display = "block";
+
+        // DEFINING THE NEXT FUNCTION
+        function next(id) {
+            document.getElementsByClassName('container')[id - 1].style.display = "none";
+            document.getElementsByClassName('container')[id].style.display = "block";
+        }
+        //getting final result
+        function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            }
+            if (document.getElementById('correct6').checked) {
+                score++;
+            }
+            if (document.getElementById('correct7').checked) {
+                score++;
+            }
+            if (document.getElementById('correct8').checked) {
+                score++;
+            }
+            if (document.getElementById('correct9').checked) {
+                score++;
+            }
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+
+
+
+            alert("your score is: " + score + "  out of 10  ");
+        }
+
+
+    </script>
+</body>
+
+</html>
